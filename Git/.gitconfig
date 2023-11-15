@@ -1,0 +1,10 @@
+[user]
+	email = davidb@kizan.com
+	name = David Buckingham
+[alias]
+	ghist = log --color --pretty=format:'%C(yellow)%h%Creset %s %C(green)%d%Creset %C(cyan)<%an> (%cr)%Creset' --abbrev-commit --graph 
+	root = rev-parse --show-cdup
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
