@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Git Branch History
+first_commit=($(git reflog --pretty=format:"%h" `git rev-parse --abbrev-ref HEAD`))
+git log --color --pretty=format:'%C(yellow)%h%Creset %s %C(green)%d%Creset %C(cyan)<%an> (%cr)%Creset' --abbrev-commit --first-parent ${first_commit[-1]}..`git rev-parse --abbrev-ref HEAD`

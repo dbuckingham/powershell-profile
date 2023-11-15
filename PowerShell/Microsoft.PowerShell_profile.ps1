@@ -1,5 +1,5 @@
 ###
-### posh-git
+### Install-Modules
 ###
 Install-Module posh-git -Force
 
@@ -12,6 +12,7 @@ oh-my-posh --init --shell pwsh --config ~/.agnosterplus-dbuckingham.omp.json | I
 ### Update PATH Environment Variable
 ###
 $Env:PATH += ";$([Environment]::GetFolderPath("MyDocuments"))\PowerShell\Scripts"
+$Env:PATH += ";$([Environment]::GetFolderPath("MyDocuments"))\Scripts\Git"
 
 ###
 ###

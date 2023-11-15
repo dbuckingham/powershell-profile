@@ -31,3 +31,5 @@ Setup-Symlink -path (Join-Path -Path $HOME -ChildPath .agnosterplus-dbuckingham.
 # Setup symlink for .gitconfig
 #
 Setup-Symlink -path (Join-Path -Path $HOME -ChildPath .gitconfig) -value "$gitRepoPath\Git\.gitconfig"
+Setup-Symlink -path (Join-Path -Path $([Environment]::GetFolderPath("MyDocuments")) -ChildPath "Scripts\Git") -value "$gitRepoPath\Git\Scripts"
+# TODO - Setup symlink to git scripts folder, and update path variable in PS profile
