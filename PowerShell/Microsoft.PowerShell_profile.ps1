@@ -1,7 +1,7 @@
 ###
 ### Install-Modules
 ###
-Install-Module posh-git -Force
+Install-Module posh-git -Scope CurrentUser -Force
 
 ###
 ### oh-my-posh
