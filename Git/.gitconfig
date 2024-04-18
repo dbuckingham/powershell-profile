@@ -4,6 +4,10 @@
 [alias]
 	ghist = log --color --pretty=format:'%C(yellow)%h%Creset %s %C(green)%d%Creset %C(cyan)<%an> (%cr)%Creset' --abbrev-commit --graph 
 	root = rev-parse --show-cdup
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
 [color "status"]
 	added = yellow
 	changed = green
